@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+
+	<body>
+		<!-- button[type="button"]{click me!} -->
+		<button type="button">click me!</button>
+
+		<!-- div>div*3 -->
+
+		<div data-selected="true" class="active"></div>
+		<div class="purple">
+			<span class="cyan"></span>
+		</div>
+		<!-- header>nav>ul>li*3.class$$>a{Item $} -->
+		<header>
+			<nav>
+				<ul>
+					<li class="class01"><a href="">Item 1</a></li>
+					<li class="class02"><a href="">Item 2</a></li>
+					<li class="class03"><a href="">Item 3</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- section>div>h1{Hello}+p{World} -->
+		<section>
+			<div>
+				<h1>Hello</h1>
+				<p>World</p>
+			</div>
+		</section>
+
+		header>nav^main+footer (header>nav)main+footer
+
+		<header>
+			<nav></nav>
+		</header>
+		<main></main>
+		<footer></footer>
+
+		<!-- header>h1{heading}+nav>ol>li*5>a{Link $}+main+footer -->
+		<header>
+			<h2>heading</h2>
+			<nav>
+				<ol>
+					<li><a href="">Link 1</a></li>
+					<li><a href="">Link 2</a></li>
+					<li><a href="">Link 3</a></li>
+					<li><a href="">Link 4</a></li>
+					<li><a href="">Link 5</a></li>
+				</ol>
+			</nav>
+		</header>
+		<main></main>
+		<footer></footer>
+
+		<!-- form:post>(.group>label+input:text)+(.group>label+input:number) -->
+    <form action="" method="post">
+      <div class="group"><label for=""></label><input type="text" name="" id=""></div>
+      <div class="group"><label for=""></label><input type="number" name="" id=""></div>
+    </form>
+	</body>
+</html>
